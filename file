@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScreenScape - Two-Column Hero</title>
+    <style>
+        :root { --primary-blue: #007bff; --bg-color: #fdfaf4; }
+        body { margin: 0; font-family: sans-serif; background-color: var(--bg-color); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        
+        /* Two-Column Flexbox Layout */
+        .hero { display: flex; align-items: center; gap: 40px; padding-top: 50px; }
+        .hero-text { flex: 1; }
+        .hero-mockup { flex: 1; display: flex; justify-content: center; }
+        
+        /* Mobile Mockup Styles */
+        .phone-frame {
+            width: 280px; height: 560px; background: #000;
+            border-radius: 30px; border: 10px solid #333;
+        }
+        
+        h1 { font-size: 3rem; color: var(--primary-blue); }
+        .btn { padding: 10px 20px; border-radius: 20px; text-decoration: none; }
+        .btn-android { background: #6a1b9a; color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Seamless Streaming</h1>
+                <p>Stream everything in one place.</p>
+                <a href="#" class="btn btn-android">Get it on Android</a>
+            </div>
+            <div class="hero-mockup">
+                <div class="phone-frame"></div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
